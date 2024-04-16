@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../fonts/Montserrat-Black.ttf);
+}
+
+
+$font-main: "Montserrat-Regular", sans-serif;
+$font-semibold: "Montserrat-SemiBold", sans-serif;
+$font-black: "Montserrat-Black", sans-serif;
+
+$font-size-15: 15px;
+
+$color-black: #000;
+$color-white: #fff;
+$color-buttons: #001581;
+$color-contrast: #333333;
+
+$border-radius-button: 4px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.before-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bheader-contact {
+  display: flex;
+  gap: 20px;
+  margin: 17px 0;
+}
+
+.bheader-content-elem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.bheader-content-elem a {
+  text-decoration: none;
+  color: $color-black;
+  font-family: $font-main;
+  font-size: $font-size-15;
+  text-wrap: wrap;
+}
+
+.bheader-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 17px 0;
+}
+
+.bheader-button {
+  background-color: $color-buttons;
+  color: $color-white;
+  font-family: $font-semibold;
+  padding: 6px 25px;
+  border-radius: $border-radius-button;
+}
+
+header {
+  background-color: $color-contrast;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header-content ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header-content ul li {
+  list-style-type: none;
+  font-family: $font-main;
+}
+
+.header-content ul li a {
+  text-decoration: none;
+  color: $color-white;
+}
