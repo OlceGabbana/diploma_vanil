@@ -43,7 +43,6 @@ body {
   gap: 10px;
   align-items: center;
 }
-
 .bheader-content-elem a {
   text-decoration: none;
   color: #000;
@@ -55,8 +54,12 @@ body {
 .bheader-buttons {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
   margin: 17px 0;
+}
+.bheader-buttons a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 .bheader-button {
@@ -65,6 +68,12 @@ body {
   font-family: "Montserrat-SemiBold", sans-serif;
   padding: 6px 25px;
   border-radius: 4px;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.bheader-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 header {
@@ -78,17 +87,74 @@ header {
   padding: 10px 0;
 }
 
-.header-content ul {
+nav ul {
   display: flex;
   gap: 20px;
 }
-
-.header-content ul li {
+nav li {
   list-style-type: none;
   font-family: "Montserrat-Regular", sans-serif;
 }
-
-.header-content ul li a {
+nav a {
   text-decoration: none;
   color: #fff;
+  transition: opacity 0.3s ease;
+}
+nav a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.catalog h2 {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 52px;
+  margin-bottom: 60px;
+}
+
+.catalog-cards {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-card h3 {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 24px;
+  margin: 15px 0 10px;
+}
+.catalog-card a {
+  text-decoration: none;
+  padding: 20px 40px;
+  background-color: #001581;
+  color: #fff;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+.catalog-card a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.catalog-card-desc {
+  display: flex;
+  gap: 35px;
+}
+
+.catalog-card-desc-elem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.catalog-card-desc-elem p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */

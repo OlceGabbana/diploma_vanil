@@ -19,6 +19,8 @@ $font-semibold: "Montserrat-SemiBold", sans-serif;
 $font-black: "Montserrat-Black", sans-serif;
 
 $font-size-15: 15px;
+$font-size-24: 24px;
+$font-size-52: 52px;
 
 $color-black: #000;
 $color-white: #fff;
@@ -26,6 +28,8 @@ $color-buttons: #001581;
 $color-contrast: #333333;
 
 $border-radius-button: 4px;
+
+$transition-buttons: opacity 0.3s ease;
 
 * {
   margin: 0;
@@ -59,21 +63,28 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-}
-
-.bheader-content-elem a {
-  text-decoration: none;
-  color: $color-black;
-  font-family: $font-main;
-  font-size: $font-size-15;
-  text-wrap: wrap;
+  
+  a {
+    text-decoration: none;
+    color: $color-black;
+    font-family: $font-main;
+    font-size: $font-size-15;
+    text-wrap: wrap;
+  }
 }
 
 .bheader-buttons {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
   margin: 17px 0;
+  
+  a {
+    &:hover {
+      opacity: 0.8;
+      transition: $transition-buttons;
+    }
+  }
 }
 
 .bheader-button {
@@ -82,6 +93,13 @@ body {
   font-family: $font-semibold;
   padding: 6px 25px;
   border-radius: $border-radius-button;
+  transition: $transition-buttons;
+  text-decoration: none;
+  
+  &:hover {
+    opacity: 0.8;
+    transition: $transition-buttons;
+  }
 }
 
 header {
@@ -95,17 +113,87 @@ header {
   padding: 10px 0;
 }
 
-.header-content ul {
+nav {
+  ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  li {
+    list-style-type: none;
+    font-family: $font-main;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $color-white;
+    transition: $transition-buttons;
+    
+    &:hover {
+      opacity: 0.8;
+      transition: $transition-buttons;
+    }
+  }
+}
+
+
+section {
+  padding-top: 100px;
+}
+
+////////////////////////////////////////////////////////////catalog
+.catalog {
+  h2 {
+    font-family: $font-main;
+    font-size: $font-size-52;
+    margin-bottom: 60px;
+  }
+}
+
+.catalog-cards {
   display: flex;
-  gap: 20px;
+  column-gap: 12px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-content ul li {
-  list-style-type: none;
-  font-family: $font-main;
+.catalog-card {
+  h3 {
+    font-family: $font-main;
+    font-size: $font-size-24;
+    margin: 15px 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 20px 40px;
+    background-color: $color-buttons;
+    color: $color-white;
+    font-family: $font-semibold;
+    border-radius: $border-radius-button;
+    transition: $transition-buttons;
+    
+    &:hover {
+      opacity: 0.8;
+      transition: $transition-buttons;
+    }
+  }
 }
 
-.header-content ul li a {
-  text-decoration: none;
-  color: $color-white;
+.catalog-card-desc {
+  display: flex;
+  gap: 35px;
+}
+
+.catalog-card-desc-elem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+  p {
+    font-family: $font-main;
+    font-size: $font-size-15;
+  }
 }
