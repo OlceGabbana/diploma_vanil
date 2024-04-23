@@ -13,19 +13,29 @@
   src: url(../fonts/Montserrat-Black.ttf);
 }
 
+@font-face {
+  font-family: "Mitr-Light";
+  src: url(../fonts/Mitr-Light.ttf);
+}
+
+
 
 $font-main: "Montserrat-Regular", sans-serif;
 $font-semibold: "Montserrat-SemiBold", sans-serif;
 $font-black: "Montserrat-Black", sans-serif;
+$font-mitr: "Mitr-Light", sans-serif;
 
 $font-size-15: 15px;
 $font-size-24: 24px;
 $font-size-52: 52px;
+$font-size-75: 75px;
+$font-size-90: 90px;
 
 $color-black: #000;
 $color-white: #fff;
 $color-buttons: #001581;
-$color-contrast: #333333;
+$color-contrast: #fff;
+$color-slogan: #151D46;
 
 $border-radius-button: 4px;
 
@@ -51,6 +61,10 @@ body {
 .before-header {
   display: flex;
   justify-content: space-between;
+}
+
+.bheader-hr {
+  border-top: 1px solid #CCC;
 }
 
 .bheader-contact {
@@ -104,6 +118,7 @@ body {
 
 header {
   background-color: $color-contrast;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header-content {
@@ -126,7 +141,7 @@ nav {
   
   a {
     text-decoration: none;
-    color: $color-white;
+    color: $color-black;
     transition: $transition-buttons;
     
     &:hover {
@@ -196,4 +211,52 @@ section {
     font-family: $font-main;
     font-size: $font-size-15;
   }
+}
+
+//////////////////////////////////////////////////////////////////slogan
+
+.slogan {
+  margin-top: 100px;
+  background-color: $color-slogan;
+  color: $color-contrast;
+  padding-top: 0;
+}
+
+.slogan-main {
+  font-family: $font-main;
+  font-size: $font-size-52;
+  color: $color-contrast;
+  
+  span {
+    font-family: $font-mitr;
+  }
+}
+
+.slogan-gradient {
+  font-family: $font-black;
+  font-size: $font-size-75;
+  background: radial-gradient(circle at center, #6385FD, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.slogan-clear {
+  font-family: $font-black;
+  font-size: $font-size-90;
+  text-align: center;
+  color: $color-slogan;
+  text-shadow:
+  -1px -1px 0 #fff,  
+   1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.slogan-right-text {
+  text-align: right;
+}
+
+.slogan-content {
+  padding: 60px 0;
 }

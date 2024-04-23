@@ -10,6 +10,10 @@
   font-family: "Montserrat-Black";
   src: url(../fonts/Montserrat-Black.ttf);
 }
+@font-face {
+  font-family: "Mitr-Light";
+  src: url(../fonts/Mitr-Light.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +34,10 @@ body {
 .before-header {
   display: flex;
   justify-content: space-between;
+}
+
+.bheader-hr {
+  border-top: 1px solid #CCC;
 }
 
 .bheader-contact {
@@ -77,7 +85,8 @@ body {
 }
 
 header {
-  background-color: #333333;
+  background-color: #fff;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .header-content {
@@ -97,7 +106,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   transition: opacity 0.3s ease;
 }
 nav a:hover {
@@ -157,4 +166,45 @@ section {
 .catalog-card-desc-elem p {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 15px;
+}
+
+.slogan {
+  margin-top: 100px;
+  background-color: #151D46;
+  color: #fff;
+  padding-top: 0;
+}
+
+.slogan-main {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 52px;
+  color: #fff;
+}
+.slogan-main span {
+  font-family: "Mitr-Light", sans-serif;
+}
+
+.slogan-gradient {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 75px;
+  background: radial-gradient(circle at center, #6385FD, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.slogan-clear {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 90px;
+  text-align: center;
+  color: #151D46;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.slogan-right-text {
+  text-align: right;
+}
+
+.slogan-content {
+  padding: 60px 0;
 }/*# sourceMappingURL=style.css.map */
