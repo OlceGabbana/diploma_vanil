@@ -26,7 +26,9 @@ $font-black: "Montserrat-Black", sans-serif;
 $font-mitr: "Mitr-Light", sans-serif;
 
 $font-size-15: 15px;
+$font-size-20: 20px;
 $font-size-24: 24px;
+$font-size-36: 36px;
 $font-size-52: 52px;
 $font-size-75: 75px;
 $font-size-90: 90px;
@@ -34,8 +36,7 @@ $font-size-90: 90px;
 $color-black: #000;
 $color-white: #fff;
 $color-buttons: #001581;
-$color-contrast: #fff;
-$color-slogan: #151D46;
+$color-contrast: #151D46;
 
 $border-radius-button: 4px;
 
@@ -117,7 +118,7 @@ body {
 }
 
 header {
-  background-color: $color-contrast;
+  background-color: $color-white;
   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -156,14 +157,13 @@ section {
   padding-top: 100px;
 }
 
-////////////////////////////////////////////////////////////catalog
-.catalog {
-  h2 {
-    font-family: $font-main;
-    font-size: $font-size-52;
-    margin-bottom: 60px;
-  }
+.headers-h2 {
+  font-family: $font-main;
+  font-size: $font-size-52;
+  margin-bottom: 60px;
 }
+
+////////////////////////////////////////////////////////////catalog
 
 .catalog-cards {
   display: flex;
@@ -217,15 +217,15 @@ section {
 
 .slogan {
   margin-top: 100px;
-  background-color: $color-slogan;
-  color: $color-contrast;
+  background-color: $color-contrast;
+  color: $color-white;
   padding-top: 0;
 }
 
 .slogan-main {
   font-family: $font-main;
   font-size: $font-size-52;
-  color: $color-contrast;
+  color: $color-white;
   
   span {
     font-family: $font-mitr;
@@ -245,7 +245,7 @@ section {
   font-family: $font-black;
   font-size: $font-size-90;
   text-align: center;
-  color: $color-slogan;
+  color: $color-contrast;
   text-shadow:
   -1px -1px 0 #fff,  
    1px -1px 0 #fff,
@@ -259,4 +259,108 @@ section {
 
 .slogan-content {
   padding: 60px 0;
+}
+
+/////////////////////////////////////////////advantages
+.advantages-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-card {
+  
+  width: 15%;
+  padding: 30px 15px;
+  border-radius: 15px;
+  
+  box-shadow: 0 5px 0 0 rgba(255, 255, 255, 0.95), 0 30px 40px 0 rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.6);
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  img {
+    width: 80px;
+    margin-bottom: 30px;
+  }
+  
+  p{
+    font-family: $font-main;
+    font-size: $font-size-15;
+    text-wrap: wrap;
+    text-align: center;
+  }
+}
+
+////////////////////////////////////services
+
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-button {
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: $color-buttons;
+  
+  a {
+    font-family: $font-semibold;
+    font-size: $font-size-20;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+.services-card-bg {
+  font-family: $font-semibold;
+  font-size: 150px;
+  color: $color-white;
+  text-shadow:
+  -1px -1px 0 #CBCBCB,  
+   1px -1px 0 #CBCBCB,
+   -1px 1px 0 #CBCBCB,
+    1px 1px 0 #CBCBCB;
+}
+
+.services-card {
+  position: relative;
+  width: 25%;
+}
+
+.services-card-content {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+  
+  p {
+    font-family: $font-main;
+    font-size: $font-size-36;
+  }
+}
+
+.services-card-content-elem {
+  h3 {
+    font-family: $font-main;
+    font-size: $font-size-24;
+  }
+  
+  span {
+    padding-top: 8px;
+    font-family: $font-semibold;
+    font-size: $font-size-15;
+    color: $color-buttons;
+  }
+  
+  p {
+    margin-top: 25px;
+    font-size: $font-size-15;
+  }
 }

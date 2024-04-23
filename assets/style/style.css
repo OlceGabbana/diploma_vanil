@@ -118,7 +118,7 @@ section {
   padding-top: 100px;
 }
 
-.catalog h2 {
+.headers-h2 {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 52px;
   margin-bottom: 60px;
@@ -207,4 +207,89 @@ section {
 
 .slogan-content {
   padding: 60px 0;
+}
+
+.advantages-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-card {
+  width: 15%;
+  padding: 30px 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 0 0 rgba(255, 255, 255, 0.95), 0 30px 40px 0 rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.advantages-card img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.advantages-card p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-button {
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: #001581;
+}
+.services-button a {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.services-card-bg {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 150px;
+  color: #fff;
+  text-shadow: -1px -1px 0 #CBCBCB, 1px -1px 0 #CBCBCB, -1px 1px 0 #CBCBCB, 1px 1px 0 #CBCBCB;
+}
+
+.services-card {
+  position: relative;
+  width: 25%;
+}
+
+.services-card-content {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}
+.services-card-content p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 36px;
+}
+
+.services-card-content-elem h3 {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 24px;
+}
+.services-card-content-elem span {
+  padding-top: 8px;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 15px;
+  color: #001581;
+}
+.services-card-content-elem p {
+  margin-top: 25px;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
