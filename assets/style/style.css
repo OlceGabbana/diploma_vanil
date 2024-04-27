@@ -139,7 +139,8 @@ section {
   font-size: 24px;
   margin: 15px 0 10px;
 }
-.catalog-card a {
+
+.button {
   text-decoration: none;
   padding: 20px 40px;
   background-color: #001581;
@@ -148,7 +149,7 @@ section {
   border-radius: 4px;
   transition: opacity 0.3s ease;
 }
-.catalog-card a:hover {
+.button:hover {
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
@@ -294,4 +295,159 @@ section {
 .services-card-content-elem p {
   margin-top: 25px;
   font-size: 15px;
+}
+
+.reviews h2 {
+  margin-bottom: 10px;
+}
+
+.reviews-subtitle {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.reviews-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews-card p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 60px 10% 50px 10%;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  box-shadow: 0 5px 0 0 rgba(255, 255, 255, 0.95), 0 40px 30px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.feedback {
+  background-color: #001581;
+}
+.feedback h2 {
+  color: #fff;
+}
+
+.feedback-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 80px;
+}
+
+.feedback-content-col {
+  width: 50%;
+}
+.feedback-content-col p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.feedback-content-col form {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.feedback-content-col input[type=text], .feedback-content-col input[type=email] {
+  border: none;
+  padding: 18px 30px;
+  transition: border-radius 0.3s ease;
+}
+.feedback-content-col input[type=text]:hover, .feedback-content-col input[type=email]:hover {
+  border-radius: 5px;
+  transition: border-radius 0.3s ease;
+}
+.feedback-content-col input[type=submit] {
+  width: 70%;
+  border: none;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 20px;
+  color: #001581;
+  text-transform: uppercase;
+  opacity: 0.9;
+  padding: 18px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.feedback-content-col input[type=submit]:hover {
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.feedback-content-col input::-moz-placeholder {
+  color: #001581;
+  opacity: 0.7;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.feedback-content-col input::placeholder {
+  color: #001581;
+  opacity: 0.7;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.feedback-content-col label {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.faq details {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  padding: 10px 10px 0;
+  margin: 35px;
+}
+.faq summary {
+  margin: -10px -10px 0;
+  padding: 10px;
+}
+.faq details[open] {
+  padding: 10px;
+}
+.faq details[open] summary {
+  border-bottom: 1px solid #001581;
+  margin-bottom: 1em;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #151D46;
+}
+
+.footer-content {
+  padding-top: 40px;
+}
+.footer-content a {
+  color: #fff;
+}
+
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.confidence {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  padding: 60px 0 15px 0;
 }/*# sourceMappingURL=style.css.map */
